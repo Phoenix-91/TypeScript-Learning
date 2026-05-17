@@ -56,15 +56,32 @@
 }    
 
 
-// ye yaha pr hum apni type banaa rahe hai using type keyword
+// // ye yaha pr hum apni type banaa rahe hai using type keyword
 
- type chaiOrder={
-    type: string
-    suger : number
+//  type chaiOrder={
+//     type: string
+//     suger : number
 
- }
- function ischaiOrder( obj: any  ):obj is chaiOrder{
- return(
-    typeof obj === "object"
- }
+//  }
+//  function ischaiOrder( obj: any  ):obj is chaiOrder{
+//  return(
+//     typeof obj === "object"
+//  }
  
+
+
+interface User {
+   name: string
+   age: number
+}
+
+class Person implements User {
+   name: string
+   age: number
+
+   constructor(name: string, age: number) {
+      this.name = name
+      this.age = age
+   }
+}
+
