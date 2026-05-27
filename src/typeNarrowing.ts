@@ -85,3 +85,24 @@ class Person implements User {
    }
 }
 
+
+
+
+// in operator : 
+
+type user={
+    name: string
+}
+
+type ages ={
+ age: number
+}
+
+function print (person : name | ages){
+    if("admin" in person){
+        return ( " hello")
+    }
+    else {
+        return("invalide")
+    }
+}
